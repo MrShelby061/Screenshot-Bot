@@ -3,10 +3,10 @@ from pathlib import Path
 
 class Config:
     
-    API_ID = int(os.environ.get('API_ID'))
-    API_HASH = os.environ.get('API_HASH')
-    BOT_TOKEN = os.environ.get('BOT_TOKEN')
-    SESSION_NAME = os.environ.get('SESSION_NAME')
+    API_ID = int(os.environ.get('API_ID', "22433958"))
+    API_HASH = os.environ.get('API_HASH', "21dcdaabac6f02b5eea0d715a724ce74")
+    BOT_TOKEN = os.environ.get('BOT_TOKEN', "7447441468:AAFC9PKRLBitUQ_oeaYm6CyY2DzUGkGofPI")
+    SESSION_NAME = os.environ.get('SESSION_NAME', "screenshot61_bot")
     LOG_CHANNEL = int(os.environ.get('LOG_CHANNEL'))
     DATABASE_URL = os.environ.get('DATABASE_URL')
     AUTH_USERS = [int(i) for i in os.environ.get('AUTH_USERS', '').split(' ')]
